@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confess Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- Page 1 -->
+    <div id="page1" class="page active">
+      <h2>Hai Kamu! 🌹</h2>
+      <p>Aku punya sesuatu yang mau aku sampaikan...</p>
+      <button onclick="goToPage(2)">Klik untuk lihat ✨</button>
+    </div>
+
+    <!-- Page 2 -->
+    <div id="page2" class="page">
+      <h2>Maukah kamu jadi pacarku? 💍</h2>
+      <div class="choices">
+        <button id="noBtn" onclick="shrinkNo(this)">Gak dulu 🙈</button>
+        <button onclick="goToPage(3)">Yessss! 💖</button>
+      </div>
+    </div>
+
+    <!-- Page 3 -->
+    <div id="page3" class="page">
+      <h2>YEYYYY!! ❤️🥳</h2>
+      <p>Kita resmi jadi pasangan paling uwu~ ✨</p>
+    </div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
